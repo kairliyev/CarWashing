@@ -1,0 +1,10 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="standard_10">10dp</dimen>
+    <dimen name="standard_5">5dp</dimen>
+    <dimen name="standard_16">16dp</dimen>
+    <dimen name="card_padding">2dp</dimen>
+    <dimen name="tasks_margin">10dp</dimen>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/navigation_map"
+            android:icon="@drawable/ic_placeholder"
+            android:title="Карта"
+    />
+
+    <item
+            android:id="@+id/navigation_history"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="История" />
+
+    <item
+            android:id="@+id/navigation_news"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Новости" />
+
+    <item
+            android:id="@+id/navigation_cabinet"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Личный кабинет" />
+
+</menu>

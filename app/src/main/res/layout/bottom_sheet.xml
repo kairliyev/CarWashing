@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="99dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <RelativeLayout
+        android:id="@+id/peek_height_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/standard_16"
+        android:layout_marginEnd="@dimen/standard_16"
+        android:background="@drawable/bottom_layout_border_white"
+        android:paddingTop="@dimen/standard_10"
+        android:paddingBottom="@dimen/standard_10">
+
+        <ImageView
+            android:id="@+id/logo_shop"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="@dimen/standard_10"
+            android:layout_marginRight="@dimen/standard_10"
+            android:scaleType="centerInside"
+            android:src="@drawable/logo_decathlon" />
+
+        <TextView
+            android:id="@+id/name_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/standard_5"
+            android:layout_marginRight="@dimen/standard_5"
+            android:layout_toEndOf="@+id/logo_shop"
+            android:layout_toRightOf="@+id/logo_shop"
+            android:text="Decathlon Sport Shop"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/type_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/address_shop"
+            android:layout_marginLeft="@dimen/standard_5"
+            android:layout_marginTop="@dimen/standard_10"
+            android:layout_marginRight="@dimen/standard_5"
+            android:layout_toEndOf="@+id/logo_shop"
+            android:layout_toRightOf="@+id/logo_shop"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Сеть спортивных магазинов"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/address_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_shop"
+            android:layout_marginLeft="@dimen/standard_5"
+            android:layout_marginTop="@dimen/standard_5"
+            android:layout_marginRight="@dimen/standard_5"
+            android:layout_toEndOf="@+id/logo_shop"
+            android:layout_toRightOf="@+id/logo_shop"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="ул. Абая 25"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>
