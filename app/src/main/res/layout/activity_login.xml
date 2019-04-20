@@ -66,7 +66,7 @@
     <Button
         android:id="@+id/login_button_login"
         android:layout_width="0dp"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:background="@drawable/rounded_button"
         android:text="Вход"
@@ -78,17 +78,14 @@
         app:layout_constraintTop_toBottomOf="@+id/password_edittext_login" />
 
     <TextView
-        android:id="@+id/back_to_register_textview"
-        android:layout_width="0dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="16dp"
-        android:text="Создать аккаунт"
-        android:textColor="@color/dark_magenta"
-        android:textSize="16sp"
-
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/login_button_login"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/login_button_login"
-        app:layout_constraintTop_toBottomOf="@+id/login_button_login" />
+            android:id="@+id/back_to_register_textview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Создать аккаунт"
+            android:textColor="@color/dodger_blue"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/login_button_login"
+            app:layout_constraintTop_toBottomOf="@+id/login_button_login"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

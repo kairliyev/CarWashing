@@ -27,7 +27,7 @@ class HistoryNewsAdapter(val items: ArrayList<HistoryNews>) :
 
     override fun onBindViewHolder(p0: HistoryNewsViewHolder, p1: Int) {
         p0.title.text = items[p1].title
-//        Picasso.get().load(items[p1].image).into(p0.image)
+        Picasso.get().load(items[p1].image).into(p0.image)
         p0.price.text = items[p1].price
     }
 

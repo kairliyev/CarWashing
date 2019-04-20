@@ -54,7 +54,7 @@ import java.util.List;
 public class MapFragment extends Fragment implements View.OnClickListener, OnMapReadyCallback,
         GoogleApiClient.ConnectionCallbacks,
         GoogleApiClient.OnConnectionFailedListener,
-       GoogleMap.OnMarkerClickListener,
+        GoogleMap.OnMarkerClickListener,
         GoogleMap.OnMapClickListener, LocationListener {
 
 
@@ -149,7 +149,6 @@ public class MapFragment extends Fragment implements View.OnClickListener, OnMap
         name_shop = view.findViewById(R.id.name_shop);
         type_shop = view.findViewById(R.id.type_shop);
         address_shop = view.findViewById(R.id.address_shop);
-
 
 
         bottomSheetBehavior.setBottomSheetCallback(new BottomSheetBehavior.BottomSheetCallback() {
@@ -255,61 +254,39 @@ public class MapFragment extends Fragment implements View.OnClickListener, OnMap
 //
 
         shopDataList.add(new ShopData(
-                "http://www.amu.kz/bitrix/templates/T2017//images/logo.jpg",
-                "НАО «Медицинский университет Астана» ",
-                "51.181543,71.415857",
-                " Beibitshilik street, 53",
-                " University",
-                "https://www.inform.kz/fotoarticles/20121022123159.jpg ",
-                " Фролов Евгений Вадимович",
-                " 8 (707) 208-72-16",
-                " On workdays 08:30 - 18:00, \n Saturday output, \n Sunday output"
+                "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto/gigs/109506967/original/e566a25575cb4a940f3341448bb208c351476eee/do-creative-attractive-car-wash-logo-design-for-you-business-only-22-hrs.png",
+                "Aqua Express",
+                "43.238949,76.889709",
+                "Abaya, 55",
+                "Автомойка",
+                " ",
+                " ",
+                " ",
+                ""
         ));
 
         shopDataList.add(new ShopData(
-                "http://umc.org.kz/upload/medialibrary/d66/d664b190538af4da973052fe33fa6390.png",
-                "Национальный научный центр материнства и детства, корпоративный фонд University Medical Center",
-                "51.124625,71.406520",
-                "Turan avenue, 32",
-                "Scientific center",
-                "https://www.inform.kz/fotoarticles/20120217125428.jpg",
-                "Томас Дженке",
-                "+7 (7172) 70-45-60",
-                "On workdays 08:00 - 20:00, \n Saturday 08:00 - 16:00, \n Sunday output"
-        ));
-        shopDataList.add(new ShopData(
-                "http://www.perinatal-astana.kz/templates/business_pro/images/s5_logo.png",
-                " ГКП на ПХВ «Перинатальный центр №2» ",
-                "51.150027,71.454189",
-                "Tauelsyzdyk avenue, 3/1",
-                " Perinatal center",
-                "http://www.perinatal-astana.kz/images/all/about.jpg ",
-                "Габдильашимова Зарема Толымбековна",
-                " 8 (707) 169-99-77 ",
-                " On workdays 08:00 - 20:00, \n Saturday output, \n Sunday output"
+                "https://gorod24.online/uploads/image/biznes/preds/4406_5a37cd6dd3d2a.JPG",
+                "Aвтомойка Шен",
+                "43.223146,76.895539",
+                "Rozabakyeva, 32",
+                "Автомойка",
+                " ",
+                " ",
+                " ",
+                ""
         ));
 
         shopDataList.add(new ShopData(
-                "https://kz.all.biz/img/kz/service_catalog/138115.jpeg",
-                "Клуб материнства и детства 'Sabi'",
-                "51.160643,71.425642",
-                "Gumar Karash street, 3",
-                "Medical consultation",
-                "https://sxodim.com/uploads/astana/2016/09/IMG_7869.jpg",
-                "Плетеа Айнара Турсуновна",
-                "+7–707–745–69–97",
-                "On workdays 08:30 - 19:00, \n Saturday output, \n Sunday output"
-        ));
-        shopDataList.add(new ShopData(
-                "http://niet-astana.kz/images/logo-ru.jpg",
-                "Центр семейного здоровья Ниет",
-                "51.139859,71.526737",
-                "Rakhymzhan Koshkarbayev avenue, 64",
-                "Medical consultation",
-                "https://files.medelement.com/uploads/co/606383761513850661/logo/94b2b1fe4ad0f946cf66a301b6eaadb8.jpg",
-                "Рахметуллина Толкын Мейрамбековна",
-                "+7–708–658–64–25",
-                "On workdays 08:00 - 20:00, \n Saturday 09:00 - 16:00, \n Sunday output"
+                "https://gorod24.online/uploads/image/biznes/preds/4724_5a9e87f8a2255.jpg",
+                "AвтоCПА",
+                "43.238905,76.930199",
+                "Abaya, 213",
+                "Автомойка",
+                " ",
+                " ",
+                " ",
+                ""
         ));
 
 
@@ -390,7 +367,7 @@ public class MapFragment extends Fragment implements View.OnClickListener, OnMap
 
     @Override
     public void onMapReady(GoogleMap mMap) {
-        LatLng astana = new LatLng(51.124625, 71.406520);
+        LatLng astana = new LatLng(43.238949, 	76.889709);
         googleMap = mMap;
         googleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
         googleMap.setOnMapClickListener(this);

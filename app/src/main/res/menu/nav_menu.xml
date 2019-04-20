@@ -9,17 +9,17 @@
 
     <item
             android:id="@+id/navigation_history"
-            android:icon="@drawable/ic_home_black_24dp"
+            android:icon="@drawable/ic_history"
             android:title="История" />
 
     <item
             android:id="@+id/navigation_news"
-            android:icon="@drawable/ic_home_black_24dp"
+            android:icon="@drawable/ic_newspaper"
             android:title="Новости" />
 
     <item
             android:id="@+id/navigation_cabinet"
-            android:icon="@drawable/ic_home_black_24dp"
-            android:title="Личный кабинет" />
+            android:icon="@drawable/ic_user"
+            android:title="Профиль" />
 
 </menu>

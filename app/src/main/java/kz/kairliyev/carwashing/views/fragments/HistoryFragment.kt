@@ -42,9 +42,9 @@ class HistoryFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         mContext = view.context
 
-        val a = HistoryNews("", "AutoService Fast", "Позавчера 10:00", "1500tg" )
-
-        val ll = arrayListOf<HistoryNews>(HistoryNews("", "AutoService Fast", "Позавчера 10:00", "1500tg" ),HistoryNews("", "AutoService Muai", "Позавчера 10:00", "2000tg" ))
+        val ll = arrayListOf<HistoryNews>(
+            HistoryNews("https://photos-mt.kcdn.kz/bd/bd6396f6-4c57-4d08-8376-b12bd49e9c21/6-760x450.jpg", "AutoService Fast", "Позавчера 10:00", "1500tg" ),
+            HistoryNews("https://biznesua.com.ua/wp-content/uploads/2017/02/STO.jpg", "СТО Шевченко", "Вчера 12:00", "2000tg" ))
         adapterr.addHistoryNews(ll)
 
         history_recycler_view.apply {
